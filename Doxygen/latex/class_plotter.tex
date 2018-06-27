@@ -1,0 +1,59 @@
+\hypertarget{class_plotter}{}\section{Plotter Class Reference}
+\label{class_plotter}\index{Plotter@{Plotter}}
+
+
+Esta é uma classe criada junto a uma interface gráfica do Qt para receber dados de um servidor e criar um gráfico com os valores recebidos. Ela é herdeira de Q\+Main\+Window.  
+
+
+
+
+{\ttfamily \#include $<$plotter.\+h$>$}
+
+Inheritance diagram for Plotter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_plotter}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_plotter_ae42102b524033e1aa33fea567e49e406}\label{class_plotter_ae42102b524033e1aa33fea567e49e406}} 
+void \mbox{\hyperlink{class_plotter_ae42102b524033e1aa33fea567e49e406}{stop\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Encerra o Timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_plotter_a19710642f034c052eda670f75dd5e5c0}\label{class_plotter_a19710642f034c052eda670f75dd5e5c0}} 
+void \mbox{\hyperlink{class_plotter_a19710642f034c052eda670f75dd5e5c0}{change\+Timing}} (int \+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Altera a velocidade de atualização do comando \textquotesingle{}get\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_plotter_a353f441c8d35b87f33b18c255757abdc}\label{class_plotter_a353f441c8d35b87f33b18c255757abdc}} 
+void \mbox{\hyperlink{class_plotter_a353f441c8d35b87f33b18c255757abdc}{get\+DataB}} ()
+\begin{DoxyCompactList}\small\item\em Ativa o Timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_plotter_ab3f181cf97ec3e64bb3060fb0916fcfa}\label{class_plotter_ab3f181cf97ec3e64bb3060fb0916fcfa}} 
+void \mbox{\hyperlink{class_plotter_ab3f181cf97ec3e64bb3060fb0916fcfa}{set\+IP}} (Q\+String \+\_\+ipaddress)
+\begin{DoxyCompactList}\small\item\em Altera o endereço de IP de acordo com o que foi escrito na caixa de texto. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_plotter_a277dfd9402cf249320f1c9f5c879e152}\label{class_plotter_a277dfd9402cf249320f1c9f5c879e152}} 
+void \mbox{\hyperlink{class_plotter_a277dfd9402cf249320f1c9f5c879e152}{tcp\+Connect}} ()
+\begin{DoxyCompactList}\small\item\em Inicia a conexão com o IP designado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_plotter_ada7a6cae3ce1cfe9966ee1a2cff891c3}\label{class_plotter_ada7a6cae3ce1cfe9966ee1a2cff891c3}} 
+void \mbox{\hyperlink{class_plotter_ada7a6cae3ce1cfe9966ee1a2cff891c3}{tcp\+Disconnect}} ()
+\begin{DoxyCompactList}\small\item\em Encerra a conexão com o IP designado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_plotter_a1807627530de30ae58dff3c42a823497}\label{class_plotter_a1807627530de30ae58dff3c42a823497}} 
+{\bfseries Plotter} (Q\+Widget $\ast$parent=nullptr)
+\item 
+\mbox{\Hypertarget{class_plotter_a06477bf987646f000a8982db1352a11d}\label{class_plotter_a06477bf987646f000a8982db1352a11d}} 
+void \mbox{\hyperlink{class_plotter_a06477bf987646f000a8982db1352a11d}{paint\+Event}} (Q\+Paint\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em É usada para criar o gráfico. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_plotter_a63aa82ff02f2ff644403dfa4575c439b}\label{class_plotter_a63aa82ff02f2ff644403dfa4575c439b}} 
+void \mbox{\hyperlink{class_plotter_a63aa82ff02f2ff644403dfa4575c439b}{timer\+Event}} (Q\+Timer\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em É usada para ativar a coleta dos dados e criação do gráfico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Esta é uma classe criada junto a uma interface gráfica do Qt para receber dados de um servidor e criar um gráfico com os valores recebidos. Ela é herdeira de Q\+Main\+Window. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Lucas/\+Desktop/\+Delivery/qtsupervisory-\/master/\+Qt\+Tcp\+Client\+Consumer/plotter.\+h\item 
+C\+:/\+Users/\+Lucas/\+Desktop/\+Delivery/qtsupervisory-\/master/\+Qt\+Tcp\+Client\+Consumer/plotter.\+cpp\end{DoxyCompactItemize}
